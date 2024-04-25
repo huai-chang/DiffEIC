@@ -3,4 +3,4 @@
 > Zhiyuan Li, Yanhui Zhou, Hao Wei, Chenyang Ge, Jingwen Jiang<br>
 
 ## :memo:TODE
-- [ ] Release code and pretrained models。
+- [ ] Release code and pretrained models
