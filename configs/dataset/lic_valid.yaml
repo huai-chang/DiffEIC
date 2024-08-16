@@ -1,0 +1,18 @@
+dataset:
+  target: dataset.licdataset.LICDataset
+  params:
+    # Path to the file list.
+    file_list: ./datalists/valid.list
+    out_size: 512
+    crop_type: none
+    use_hflip: False
+    use_rot: False
+
+data_loader:
+  batch_size: 1
+  shuffle: false
+  num_workers: 0
+  drop_last: true
+
+batch_transform:
+  target: dataset.batch_transform.IdentityBatchTransform
