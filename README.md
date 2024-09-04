@@ -1,6 +1,7 @@
 ## Towards Extreme Image Compression with Latent Feature Guidance and Diffusion Prior
 
-> Zhiyuan Li, Yanhui Zhou, Hao Wei, Chenyang Ge, Jingwen Jiang<br>
+> [Zhiyuan Li](https://github.com/huai-chang), Yanhui Zhou, [Hao Wei](https://github.com/cshw2021), Chenyang Ge, Jingwen Jiang<br>
+> :partying_face: The paper is accepted by IEEE Transactions on Circuits and Systems for Video Technology.
 
 <p align="center">
     <img src="assets/DiffEIC.png" style="border-radius: 15px"><br>
