@@ -63,7 +63,7 @@
  
 2. Download the pre-trained weights for the LFGCM and Control Module into `./weight`.
 
-    | Bitrate   | ${\lambda_{ne}} \_ {\lambda_{sa}} \_ {\lambda}$|
+    | Bitrate   | Link|
     | --------- | ------------------ |
     | 0.12 bpp  | [1_2_1](https://drive.google.com/drive/folders/1I_ZZZtm65aNqueXzjqpn1-ciEl_wMvCS?usp=sharing)             |
     | 0.09 bpp  | [1_2_2](https://drive.google.com/drive/folders/1I_ZZZtm65aNqueXzjqpn1-ciEl_wMvCS?usp=sharing)             |
