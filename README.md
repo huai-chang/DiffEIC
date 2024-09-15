@@ -8,8 +8,8 @@
 </p>
 
 ## :book: Table Of Contents
-- [:eyes: Visual Results](#visual-results)
-- [:crossed\_swords: Quantitative Performance](#quantitative-performance)
+- [:eyes: Visual Results](#visual_results)
+- [:crossed\_swords: Quantitative Performance](#quantitative_performance)
 - [:computer: Train](#computer-train)
 - [:zap: Inference](#inference)
 - [:memo: TODO](#todo)
