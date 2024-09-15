@@ -136,14 +136,6 @@ class CDDM(nn.Module):
         ch_inout_ctr['mid'].append((self.control_model.middle_block[0].channels, self.control_model.middle_block[-1].out_channels))
         ch_inout_base['mid'].append((base_model.middle_block[0].channels, base_model.middle_block[-1].out_channels))
 
-        for module in self.control_model.output_blocks:
-            if isinstance(module[0], nn.Conv2d):
-                ch_inout_ctr['dec'].append((module[0].in_channels, module[0].out_channels))
-            elif isinstance(module[0], (ResBlock, ResBlock_orig)):
-                ch_inout_ctr['dec'].append((module[0].channels, module[0].out_channels))
-            elif isinstance(module[-1], Upsample):
-                ch_inout_ctr['dec'].append((module[0].channels, module[-1].out_channels))
-
         for module in base_model.output_blocks:
             if isinstance(module[0], nn.Conv2d):
                 ch_inout_base['dec'].append((module[0].in_channels, module[0].out_channels))
