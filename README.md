@@ -1,7 +1,7 @@
 ## Towards Extreme Image Compression with Latent Feature Guidance and Diffusion Prior
 
 > [Zhiyuan Li](https://github.com/huai-chang), Yanhui Zhou, [Hao Wei](https://github.com/cshw2021), Chenyang Ge, Jingwen Jiang<br>
-> :partying_face: The paper is accepted by IEEE Transactions on Circuits and Systems for Video Technology.
+> :partying_face: This work is accepted by IEEE Transactions on Circuits and Systems for Video Technology.
 
 <p align="center">
     <img src="assets/DiffEIC.png" style="border-radius: 15px"><br>
@@ -27,7 +27,6 @@
 </p>
 
 ## <a name="train"></a>:computer: Train
-### Preparation
 1. Generate file list of training set and validation set.
 
    ```
@@ -56,9 +55,38 @@
    python3 train.py
    ```
 
+## :zap: Inference
+1. Download pretrained [Stable Diffusion v2.1](https://huggingface.co/stabilityai/stable-diffusion-2-1-base) into `./weight`.
+   ```
+   wget https://huggingface.co/stabilityai/stable-diffusion-2-1-base/resolve/main/v2-1_512-ema-pruned.ckpt --no-check-certificate
+   ```
+ 
+2. Download the pre-trained weights for the LFGCM and Control Module into `./weight`.
+
+    | Bitrate   | $\lambda_{ne}\_\lambda_{sa}\_\lambda$|
+    | --------- | ------------------ |
+    | 0.12 bpp  | [1_2_1](https://drive.google.com/drive/folders/1I_ZZZtm65aNqueXzjqpn1-ciEl_wMvCS?usp=sharing)             |
+    | 0.09 bpp  | [1_2_2](https://drive.google.com/drive/folders/1I_ZZZtm65aNqueXzjqpn1-ciEl_wMvCS?usp=sharing)             |
+    | 0.06 bpp  | [1_2_4](https://drive.google.com/drive/folders/1I_ZZZtm65aNqueXzjqpn1-ciEl_wMvCS?usp=sharing)              |
+    | 0.04 bpp  | [1_2_8](https://drive.google.com/drive/folders/1I_ZZZtm65aNqueXzjqpn1-ciEl_wMvCS?usp=sharing)              |
+    | 0.02 bpp  | [1_2_16](https://drive.google.com/drive/folders/1I_ZZZtm65aNqueXzjqpn1-ciEl_wMvCS?usp=sharing)              |
+
+3. Run the following command.
+
+   ```
+   python3 inference_partition.py \
+   --ckpt_sd ./weight/v2-1_512-ema-pruned.ckpt \
+   --ckpt_lc ./weight/1_2_1/lc.ckpt \
+   --config configs/model/diffeic.yaml \
+   --input path to input images \
+   --output path to output files \
+   --steps 50 \
+   --devide cuda 
+   ```
+
 ## <a name="todo"></a>:memo: TODO
 - [x] Release code
-- [ ] Release pretrained models
+- [x] Release pretrained models
 
 ## <a name="acknowledgement">:heart: Acknowledgement
 This work is based on [ControlNet](https://github.com/lllyasviel/ControlNet), [DiffBIR](https://github.com/XPixelGroup/DiffBIR), and [ELIC](https://github.com/JiangWeibeta/ELIC), thanks to their invaluable contributions.
