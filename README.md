@@ -8,13 +8,13 @@
 </p>
 
 ## :book: Table Of Contents
-
-- [Visual Results](#visual_results)
-- [Quantitative Performance](#quantitative_performance)
-- [Train](#train)
-- [TODO](#todo)
-- [Acknowledgement](#acknowledgement)
-- [Citation](#cite)
+- [:eyes: Visual Results](#visual-results)
+- [:crossed\_swords: Quantitative Performance](#quantitative-performance)
+- [:computer: Train](#computer-train)
+- [:zap: Inference](#inference)
+- [:memo: TODO](#todo)
+- [:heart: Acknowledgement](#acknowledgement)
+- [:clipboard: Citation](#citation)
 
 ## <a name="visual_results"></a>:eyes: Visual Results
 <p align="center">
@@ -55,7 +55,7 @@
    python3 train.py
    ```
 
-## :zap: Inference
+## <a name="inference"></a>:zap: Inference
 1. Download pretrained [Stable Diffusion v2.1](https://huggingface.co/stabilityai/stable-diffusion-2-1-base) into `./weight`.
    ```
    wget https://huggingface.co/stabilityai/stable-diffusion-2-1-base/resolve/main/v2-1_512-ema-pruned.ckpt --no-check-certificate
