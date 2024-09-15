@@ -14,7 +14,7 @@
 - [:zap: Inference](#inference)
 - [:memo: TODO](#todo)
 - [:heart: Acknowledgement](#acknowledgement)
-- [:clipboard: Citation](#citation)
+- [:clipboard: Citation](#cite)
 
 ## <a name="visual_results"></a>:eyes: Visual Results
 <p align="center">
