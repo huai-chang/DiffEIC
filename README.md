@@ -26,6 +26,14 @@
     <img src="assets/quantitative.png" style="border-radius: 15px"><br>
 </p>
 
+## :wrench: Requirements
+
+```bash
+conda create -n diffeic python=3.8
+pip install torch==2.0.1
+pip install -r requirements.txt
+```
+
 ## <a name="train"></a>:computer: Train
 1. Generate file list of training set and validation set.
 
