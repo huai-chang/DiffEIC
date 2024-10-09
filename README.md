@@ -29,9 +29,11 @@
 ## :wrench: Requirements
 
 ```bash
-conda create -n diffeic python=3.8
-pip install torch==2.0.1
-pip install -r requirements.txt
+- conda create -n diffeic python=3.8
+- conda activate diffeic
+- pip install torch==2.0.1
+- pip install tb-nightly --index-url https://pypi.org/simple
+- pip install -r requirements.txt
 ```
 
 ## <a name="train"></a>:computer: Train
