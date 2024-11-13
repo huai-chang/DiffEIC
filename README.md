@@ -91,7 +91,7 @@
    --input path to input images \
    --output path to output files \
    --steps 50 \
-   --devide cuda 
+   --device cuda 
    ```
 
 ## <a name="todo"></a>:memo: TODO

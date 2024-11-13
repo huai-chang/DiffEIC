@@ -113,7 +113,8 @@ def main() -> None:
     model: DiffEIC = instantiate_from_config(OmegaConf.load(args.config))
     ckpt_sd = torch.load(args.ckpt_sd, map_location="cpu")['state_dict']
     ckpt_lc = torch.load(args.ckpt_lc, map_location="cpu")['state_dict']
-    load_state_dict(model, ckpt = {'state_dict': ckpt_sd.update(ckpt_lc)}, strict=False)
+    ckpt_sd.update(ckpt_lc)
+    load_state_dict(model, ckpt_sd, strict=False)
     # update preprocess model
     model.preprocess_model.update(force=True)
     model.freeze()
