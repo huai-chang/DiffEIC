@@ -81,7 +81,9 @@
     | 0.04 bpp  | [1_2_8](https://drive.google.com/drive/folders/1I_ZZZtm65aNqueXzjqpn1-ciEl_wMvCS?usp=sharing)              |
     | 0.02 bpp  | [1_2_16](https://drive.google.com/drive/folders/1I_ZZZtm65aNqueXzjqpn1-ciEl_wMvCS?usp=sharing)              |
 
-3. Run the following command.
+3. Download [test datasets](https://drive.google.com/drive/folders/1_EOEzocurEwETqiCjZjOrN_Lui3HaNnn?usp=share_link).
+   
+4. Run the following command.
 
    ```
    python3 inference_partition.py \
