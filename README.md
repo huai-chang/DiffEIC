@@ -1,4 +1,4 @@
-## Towards Extreme Image Compression with Latent Feature Guidance and Diffusion Prior
+## Toward Extreme Image Compression with Latent Feature Guidance and Diffusion Prior
 
 > [Zhiyuan Li](https://github.com/huai-chang), Yanhui Zhou, [Hao Wei](https://github.com/cshw2021), Chenyang Ge, Jingwen Jiang<br>
 > :partying_face: This work is accepted by IEEE Transactions on Circuits and Systems for Video Technology.
