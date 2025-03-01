@@ -111,7 +111,10 @@ Please cite us if our work is useful for your research.
 @article{li2024towards,
   author={Li, Zhiyuan and Zhou, Yanhui and Wei, Hao and Ge, Chenyang and Jiang, Jingwen},
   journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
-  title={Towards Extreme Image Compression with Latent Feature Guidance and Diffusion Prior}, 
-  year={2024},
+  title={Toward Extreme Image Compression with Latent Feature Guidance and Diffusion Prior}, 
+  year={2025},
+  volume={35},
+  number={1},
+  pages={888-899},
   doi={10.1109/TCSVT.2024.3455576}}
 ```
