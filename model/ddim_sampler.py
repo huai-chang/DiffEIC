@@ -11,7 +11,7 @@ class DDIMSampler(object):
     def __init__(self, model, schedule="linear", **kwargs):
         super().__init__()
         self.model = model
-        self.ddpm_num_timesteps = model.used_timesteps
+        self.ddpm_num_timesteps = model.num_timesteps
         self.schedule = schedule
 
     def register_buffer(self, name, attr):
@@ -68,7 +68,7 @@ class DDIMSampler(object):
                noise_dropout=0.,
                score_corrector=None,
                corrector_kwargs=None,
-               verbose=True,
+               verbose=False,
                x_T=None,
                log_every_t=100,
                unconditional_guidance_scale=1.,
@@ -98,7 +98,7 @@ class DDIMSampler(object):
         # sampling
         C, H, W = shape
         size = (batch_size, C, H, W)
-        print(f'Data shape for DDIM sampling is {size}, eta {eta}')
+        # print(f'Data shape for DDIM sampling is {size}, eta {eta}')
 
         samples, intermediates = self.ddim_sampling(conditioning, size,
                                                     callback=callback,
