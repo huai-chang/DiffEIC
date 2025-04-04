@@ -37,7 +37,9 @@
 ```
 
 ## <a name="train"></a>:computer: Train
-1. Generate file list of training set and validation set.
+1. Download [LSDIR dataset](https://pan.baidu.com/s/1IvowtZSRAPn_CnhhASEqgw?pwd=nck8).
+   
+2. Generate file list of training set and validation set.
 
    ```
    python3 make_fire_list.py\
@@ -53,14 +55,14 @@
    └── valid.list # validation file list
    ```
 
-2. Download pretrained [Stable Diffusion v2.1](https://huggingface.co/stabilityai/stable-diffusion-2-1-base) into `./weight`.
+3. Download pretrained [Stable Diffusion v2.1](https://huggingface.co/stabilityai/stable-diffusion-2-1-base) into `./weight`.
    ```
    wget https://huggingface.co/stabilityai/stable-diffusion-2-1-base/resolve/main/v2-1_512-ema-pruned.ckpt --no-check-certificate
    ```
 
-3. Modify the configuration file `./configs/train_diffeic.yaml` and `./configs/model/diffeic.yaml` accordingly.
+4. Modify the configuration file `./configs/train_diffeic.yaml` and `./configs/model/diffeic.yaml` accordingly.
 
-4. Start training.
+5. Start training.
    ```
    python3 train.py
    ```
