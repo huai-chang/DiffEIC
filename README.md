@@ -3,6 +3,8 @@
 > [Zhiyuan Li](https://github.com/huai-chang), Yanhui Zhou, [Hao Wei](https://github.com/cshw2021), Chenyang Ge, Jingwen Jiang<br>
 > :partying_face: This work is accepted by IEEE Transactions on Circuits and Systems for Video Technology.
 
+ :star: The quantitative metrics for each method presented in our paper can be found in [result.xlsx](/indicators/results.xlsx).
+
 <p align="center">
     <img src="assets/DiffEIC.png" style="border-radius: 15px"><br>
 </p>
