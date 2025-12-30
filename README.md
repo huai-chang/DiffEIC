@@ -39,7 +39,7 @@
 ```
 
 ## <a name="train"></a>:computer: Train
-1. Download [LSDIR dataset](https://pan.baidu.com/s/1IvowtZSRAPn_CnhhASEqgw?pwd=nck8).
+1. Download LSDIR dataset from [Baidu Netdisk](https://pan.baidu.com/s/1IvowtZSRAPn_CnhhASEqgw?pwd=nck8) or [Google Drive](https://drive.google.com/drive/folders/1x2Ny2z3q8sIKhJb_evoglFeFj8Le_1Tt?usp=drive_link).
    
 2. Generate file list of training set and validation set.
 
